@@ -17,7 +17,7 @@ const authenticateToken = (req, res, next) => {
   } catch (err) {
     res.status(403).json({ message: "Invalid Token" });
   }
-};
+};  
 
 // Debugging: Check if the function is exported correctly
 console.log("authenticateToken is loaded:", typeof authenticateToken);

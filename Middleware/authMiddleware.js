@@ -5,7 +5,7 @@ const authenticateToken = async (req, res, next) => {
   try {
     // ✅ **Correct Way to Extract Token**
     const token = req.header("Authorization")?.replace("Bearer ", "");
-    
+     
     console.log("Token Found:", token); // ✅ Debugging માટે Inspect કરો
 
     if (!token) {

@@ -20,7 +20,7 @@ fetch("http://localhost:5000/cart/get-user-cart", {
   .then((res) => res.json())
   .then(console.log)
   .catch(console.error);
-
+   
 // ✅ CORS setup
 app.use(cors({
   origin: "http://localhost:3000", // Frontend URL

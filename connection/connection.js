@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-
+ 
 const MONGO_URI = "mongodb://localhost:27017/bookstore";
 
 async function connectDB(retries = 5) {

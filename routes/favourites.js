@@ -23,7 +23,7 @@ router.post("/add-book-to-favourite", authenticateToken, async (req, res) => {
     // **Add to favourites**
     const newFavourite = new Favourite({ userId, bookId });
     await newFavourite.save();
-
+  
     return res.status(201).json({ message: "Added to favourites", favourite: newFavourite });
   } catch (error) {
     console.error("❌ Error adding to favourites:", error);
